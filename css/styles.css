@@ -44,9 +44,10 @@ p {
 
 .header {
   border-bottom: 1px solid #e7e9fc;
-
-}
-
+ }
+.header { box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 
+  0px 1px 6px rgba(46, 47, 66, 0.08);border-bottom: 1px solid  #e7e9fc}
 
 
 .header .container {
@@ -118,7 +119,7 @@ p {
   position: relative;
 }
 
-.nav-list-item.current::before {
+.nav-list-item.current::after {
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -203,7 +204,7 @@ p {
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  transition: background-color 0.250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-btn:hover {
@@ -361,11 +362,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main-soc-icon-link:hover {
-  background-color: #31d0aa;
+.main-soc-icon-link:hover,
+.main-soc-icon-link:focus {
+  background-color: #404bbf;
 }
 
 .soc-icon {
@@ -408,7 +410,7 @@ p {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 0.250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -484,10 +486,11 @@ p {
 
 .footer-container {
   display: flex;
-  gap: 120px;
-  align-items: start;
+    align-items: baseline;
 }
-
+.footer-logo-box{
+  margin-right: 120px;
+}
 .footer-text {
   display: block;
   max-width: 264px;
@@ -527,9 +530,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-soc-icon-link:hover {
+.footer-soc-icon-link:hover,
+.footer-soc-icon-link:focus {
   background-color: #31d0aa;
 }
